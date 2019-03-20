@@ -1,8 +1,8 @@
-import * as React from "react"
+import * as React from 'react';
 
-import { Header } from "../Header"
+import { Header } from '../Header';
 
-import "./layout.scss"
+import './layout.scss';
 
 export const Layout = ({ children, pageTitle }) => (
   <React.Fragment>
@@ -11,4 +11,4 @@ export const Layout = ({ children, pageTitle }) => (
       <main>{children}</main>
     </div>
   </React.Fragment>
-)
+);

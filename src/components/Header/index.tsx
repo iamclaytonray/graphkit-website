@@ -1,8 +1,8 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { Button } from "antd"
+import * as React from 'react';
+import { Link } from 'gatsby';
+import { Button } from 'antd';
 
-import "./header.scss"
+import './header.scss';
 
 export const Header = ({ pageTitle }) => {
   return (
@@ -37,7 +37,7 @@ export const Header = ({ pageTitle }) => {
           </Link>
           <a href="https://github.com/graphkit" target="_blank">
             <Button
-              style={{ backgroundColor: "#333", color: "#fff", border: "none" }}
+              style={{ backgroundColor: '#333', color: '#fff', border: 'none' }}
               icon="github"
             >
               Github
@@ -54,5 +54,5 @@ export const Header = ({ pageTitle }) => {
         </div>
       ) : null}
     </React.Fragment>
-  )
-}
+  );
+};
