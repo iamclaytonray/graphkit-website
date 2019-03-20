@@ -6,6 +6,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-typescript`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-less`,
       options: {
@@ -16,7 +17,6 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

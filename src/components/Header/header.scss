@@ -42,7 +42,8 @@ img {
 .header-banner {
   position: relative;
   height: 300px;
-  background-color: #f5f8ff;
+  // background-color: #f5f8ff;
+  background-color: rgba(229, 53, 171, 0.1) !important;
   display: flex;
   flex: 1;
   max-width: 100%;
