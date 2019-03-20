@@ -6,12 +6,15 @@ import { Sidebar } from '../Sidebar';
 
 export const DocsLayout = ({ children }) => (
   <React.Fragment>
-    <Layout>
-      <Sidebar />
-    </Layout>
-    <Layout>
+    <Sidebar />
+    <Layout style={{ marginLeft: 200 }}>
       <Layout.Content
-        style={{ paddingLeft: 256, top: 0, position: 'absolute' }}
+        style={{
+          margin: '24px 16px 0',
+          overflow: 'initial',
+          backgroundColor: 'rgba(22, 30, 38, 0.001%)',
+          minHeight: '100vh',
+        }}
       >
         {children}
       </Layout.Content>
