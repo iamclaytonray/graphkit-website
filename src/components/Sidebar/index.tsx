@@ -34,14 +34,17 @@ export const Sidebar = () => {
           alt=""
           className="logo"
         />
-        <Typography>Back to website</Typography>
+        <Typography style={{ margin: '0 10px' }}>Back to website</Typography>
       </Link>
       <Menu
         mode="inline"
-        defaultSelectedKeys={['1']}
-        defaultOpenKeys={['sub1']}
-        style={{ height: '100%', borderRight: 0 }}
+        defaultSelectedKeys={['0']}
+        defaultOpenKeys={['0']}
+        style={{ height: '100%', borderRight: 0, marginTop: -1 }}
       >
+        <Menu.Item key="0">
+          <Link to="/docs/general">GraphKit</Link>
+        </Menu.Item>
         <SubMenu
           key="sub1"
           title={
@@ -51,7 +54,9 @@ export const Sidebar = () => {
             </span>
           }
         >
-          <Menu.Item key="1">Commands</Menu.Item>
+          <Menu.Item key="1">
+            <Link to="/docs/cli/commands">Commands</Link>
+          </Menu.Item>
         </SubMenu>
         <SubMenu
           key="sub2"

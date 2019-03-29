@@ -1,11 +1,13 @@
-import React from 'react';
+import * as React from 'react';
 
 import { Layout } from '../components/Layout';
+import { SEO } from '../components/SEO';
 
 const ScreenShot = require('../images/screenshot.jpg');
 
 const ConsolePage = () => (
   <Layout pageTitle="Console">
+    <SEO title="Console" />
     <div
       style={{
         padding: '2em',
